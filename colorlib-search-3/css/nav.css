@@ -1,0 +1,75 @@
+/* NAVIGATION */
+nav {
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0px 5px 0px #dedede;
+}
+
+
+/* By Dominik Biedebach @domobch */
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+    transition: all 0.5s;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+nav ul li a:hover {
+    text-decoration: none;
+    background: linear-gradient(to right, #def3eb, #9acfd7);
+    transition: all 0.5s;
+}
+
+nav.circle ul li a {
+    position: relative;
+    z-index: 1;
+}
+/* By Dominik Biedebach @domobch */
+nav.circle ul li a:after {
+    display: block;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '.';
+    color: transparent;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: transparent;
+}
+nav.circle ul li a:hover:after {
+    -webkit-animation: circle 1.5s ease-in forwards;
+}
+
+a.create1{
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px 50px;
+    background: linear-gradient(to right, #86c6f1, #9acfd7);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+a.create1:hover{
+    background: linear-gradient(to right, #f3e549, #f3fac2);
+}
